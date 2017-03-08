@@ -18,7 +18,7 @@ def parse_input(_file, filetitle):
 
 
 if __name__ == '__main__':
-    for filename in os.listdir('C:\Users\kchivers\Desktop\sitemapgeneratortest\canonical_test_2\test'):
+    for filename in os.listdir('"""Add path to files"""'):
         if filename.endswith(".txt"):
             with open(filename, "r") as url_file:
                 parse_input(url_file, filename)
