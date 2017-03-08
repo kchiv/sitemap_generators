@@ -6,7 +6,7 @@ def parse_input(_file, filetitle):
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">"""
     for element in _file:
         output += "\n\t<url>\r"
-        output += "\t\t%s" % element
+        output += "\t\t<loc>%s</loc>" % element
         output += "\t\t<priority>1.0</priority>\r"
         output += "\t</url>"
     output += "\n</urlset>"
